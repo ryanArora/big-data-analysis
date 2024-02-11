@@ -3,7 +3,9 @@
   "private": true,
   "scripts": {
     "db:start": "./start.sh",
-    "db:stop": "./stop.sh"
+    "db:stop": "./stop.sh",
+    "db:generate": "prisma generate",
+    "db:push": "prisma db:push"
   },
   "prisma": {
     "seed": "ts-node prisma/seed.ts"
