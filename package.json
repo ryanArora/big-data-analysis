@@ -1,0 +1,20 @@
+{
+  "name": "@repo/db",
+  "private": true,
+  "scripts": {
+    "db:start": "./start.sh",
+    "db:stop": "./stop.sh"
+  },
+  "prisma": {
+    "seed": "ts-node prisma/seed.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.17",
+    "prisma": "^5.9.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.9.1"
+  }
+}
