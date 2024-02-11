@@ -2,10 +2,12 @@
   "name": "@repo/db",
   "private": true,
   "scripts": {
+    "postinstall": "prisma generate",
+    "dev": "prisma studio",
     "db:start": "./start.sh",
     "db:stop": "./stop.sh",
     "db:generate": "prisma generate",
-    "db:push": "prisma db:push"
+    "db:push": "prisma db push"
   },
   "prisma": {
     "seed": "ts-node prisma/seed.ts"
